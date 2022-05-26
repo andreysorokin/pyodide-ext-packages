@@ -1,0 +1,18 @@
+package:
+  name: pyross
+  version: 2.2.0
+source:
+  url: https://files.pythonhosted.org/packages/76/05/2c9402a6d6e195eb8e02598a490f06b70f96f59d288f16c24e220d06a8ab/pyross-2.2.0.tar.gz
+  sha256: aceb7f985001e4912a81ee82e098cc5f4003a6bd7d05356c054853377e892adc
+  patches:
+    - patches/0001-Removed-Dill-from-inference.pyx.patch
+test:
+  imports:
+    - pyross
+about:
+  home: https://github.com/rajeshrinet/pyross
+  PyPI: https://pypi.org/project/pyross
+  summary:
+    PyRoss is a numerical library for inference, forecasts,                and
+    optimal control of epidemiological models in Python
+  license: MIT
